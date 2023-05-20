@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contest: Frontend - 3 Second Contest</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Locate your current timezon</h1>
+    <div class="address-details">
+      <div class="adr">
+        <h2 class="head">Time zone API</h2>
+        <h2 class="dtl">Your Current Time Zone</h2>
+
+        <div class="adr-details">
+          <p>Name of the Zone :</p>
+          <div style="display: flex">
+            <p style="margin-right: 50px">Lat:</p>
+            <p>Long:</p>
+          </div>
+          <p>Offset STD:</p>
+          <p>Offset DST :</p>
+          <p>Offset DST Seconds:</p>
+          <p>Country:</p>
+          <p>Postcode:</p>
+          <p>City:</p>
+        </div>
+      </div>
+    </div>
+    <div class="input-user-address">
+      <div style="margin: auto; width: 35%">
+        <h3>Enter Address</h3>
+        <input id="addressInput" type="text" placeholder="Address" />
+        <div>
+          <button id="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="address-details" id="show-details"></div>
+    <div class="address-notfound" style="text-align: center; margin: 15px 0">
+      <h3 style="color: red">Please enter an address!</h3>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
